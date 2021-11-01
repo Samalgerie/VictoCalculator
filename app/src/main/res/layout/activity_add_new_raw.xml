@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Raw.AddNewRaw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/rawAddNameEditView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/text_view"
+            android:gravity="center|left"
+            android:hint="@string/raw_name_hint"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="#5555"
+            android:textSize="14dp"
+            android:paddingStart="10sp"
+            />
+
+        <EditText
+            android:id="@+id/rawAddPriceEditView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/text_view"
+            android:gravity="center|left"
+            android:hint="@string/price_hint"
+            android:inputType="number|numberDecimal"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="#5555"
+            android:textSize="14dp"
+            android:paddingStart="10sp"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/rawAddSpinner"
+            android:background="@drawable/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppSpinner"
+            android:entries="@array/units"
+
+       />
+
+
+        <Button
+            android:id="@+id/rawAddAddButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_button2"
+            android:layout_margin="8dp"
+            android:textColor="@color/colorWhite"
+            android:text="ADD"
+            android:textSize="16dp"
+            android:onClick="onClickAddEditRaw"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rawAddHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rawheader"
+        android:orientation="vertical"
+        android:gravity="top|left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/rawAddBackButton"
+            android:layout_width="8mm"
+            android:layout_height="8mm"
+            android:layout_margin="3mm"
+            android:background="@drawable/arrow"
+            android:onClick="OnclickBack" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

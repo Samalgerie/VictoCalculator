@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1029402387846",
+    "firebase_url": "https://victocalculator.firebaseio.com",
+    "project_id": "victocalculator",
+    "storage_bucket": "victocalculator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029402387846:android:93c63d20311a0071f0f807",
+        "android_client_info": {
+          "package_name": "com.example.samah.victo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029402387846-0cfpq0pikcl8pq3c71huc1mtmi0h0mtb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samah.victo",
+            "certificate_hash": "c786fa81d4467d4593122987a8f8f1c6d622c6ed"
+          }
+        },
+        {
+          "client_id": "1029402387846-a81dm4fdgmifd6fsub9ubeb6nccnckv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5SBdw318b8BjF68NidUhqUov2iLwPENU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029402387846-a81dm4fdgmifd6fsub9ubeb6nccnckv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F8FF"
+    tools:context="com.example.samah.victo.Raw.RawActivity">
+    <Button
+        android:id="@+id/rawRAddButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/add_button3"
+        android:text="+"
+        android:layout_margin="2dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="OnclickAdd2"
+        />
+
+    <ScrollView
+        android:id="@+id/rawScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        >
+
+        <LinearLayout
+            android:id="@+id/rawScrollLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="top|center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/rawSearchView"
+                android:layout_width="40mm"
+                android:layout_height="6mm"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/search_view"
+                android:maxLines="1"
+                android:paddingLeft="10sp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/rawHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rawheader"
+        android:orientation="vertical"
+        android:gravity="top|left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/rawBackButton"
+            android:layout_width="8mm"
+            android:layout_height="8mm"
+            android:layout_margin="3mm"
+            android:background="@drawable/arrow"
+            android:onClick="OnclickBack" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

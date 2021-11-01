@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WeMix</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="raw_name_hint"><font size="12">Raw Name</font></string>
+    <string name="pro_name_hint"><font size="12">Product Name</font></string>
+    <string name="price_hint"><font size="12">Price</font></string>
+    <string name="quantity_hint"><font size="12">Quantity</font></string>
+    <string name="maxPrice_hint"><font size="12">Max Price</font></string>
+    <string name="weight_hint"><font size="12">Weight(Kg)</font></string>
+
+    <string-array name="units">
+        <item>Kg</item>
+        <item>m</item>
+        <item>mm</item>
+        <item>l</item>
+        <item>ml</item>
+        <item>Unit</item>
+    </string-array>
+</resources>

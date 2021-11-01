@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Product.AddNewProduct">
+
+
+    <ScrollView
+        android:id="@+id/productAddScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        app:layout_constraintBottom_toTopOf="@+id/productAddAddButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/productAddLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3sp"
+            android:gravity="center"
+            android:orientation="vertical"
+
+          >
+            <EditText
+                android:id="@+id/nameAddEditView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/text_view"
+                android:gravity="center|left"
+                android:hint="@string/pro_name_hint"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="14dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="#5555" />
+
+            <EditText
+                android:id="@+id/maxPriceAddEditView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/text_view"
+                android:gravity="center|left"
+                android:hint="@string/maxPrice_hint"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="#5555"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/weightAddEditView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/text_view"
+                android:gravity="center|left"
+                android:hint="@string/weight_hint"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="#5555"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/productAddAddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/add_button2"
+        android:onClick="onClickAddEditProduct"
+        android:text="ADD"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/productAddScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/productHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/productheader"
+        android:gravity="top|left"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/productAddBackButton"
+            android:layout_width="8mm"
+            android:layout_height="8mm"
+            android:layout_margin="3mm"
+            android:background="@drawable/arrow"
+            android:onClick="OnclickBack" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

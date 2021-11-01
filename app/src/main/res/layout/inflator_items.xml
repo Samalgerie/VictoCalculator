@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card"
+    android:background="#ffffff"
+   >
+
+    <Button
+        android:id="@+id/itemNameButton"
+        android:layout_width="160sp"
+        android:layout_height="45sp"
+        android:background="@drawable/item_button"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/itemEditButton"
+        android:layout_width="3mm"
+        android:layout_height="3mm"
+        android:background="@drawable/icon_edit"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/itemDeleteButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/itemDeleteButton"
+        android:layout_width="2.5mm"
+        android:layout_height="3mm"
+        android:background="@drawable/icon_delete"
+        android:layout_marginRight="5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/infl2PriceText"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="left"
+        android:paddingLeft="5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/itemEditButton"
+        app:layout_constraintStart_toEndOf="@id/itemNameButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
